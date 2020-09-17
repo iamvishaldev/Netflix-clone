@@ -1,0 +1,36 @@
+.row {
+  color: white;
+  margin-left: 20px;
+}
+
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar {
+  /* :-webkit-scrollbar this tell all the browser either be chrome ,edge,etc*/
+  display: none; /*dont display scrollbar but display the functionality */
+}
+
+.row_poster {
+  object-fit: contain; /*The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container. */
+  width: 100%;
+  margin-right: 10px;
+  max-height: 100px;
+  transition: transform 450ms;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
+
+.row__posterLarge {
+  max-height: 250px;
+}
+
+.row_posterLarge:hover {
+  transform: scale(1.09);
+}
